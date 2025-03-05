@@ -33,8 +33,8 @@ This Nifty Trading Bot is a sophisticated Python-based stock analysis tool desig
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/nifty-trading-bot.git
-cd nifty-trading-bot
+git clone https://github.com/alanaikara/stock-predictor.git
+cd stock_predictor
 ```
 
 2. Create a virtual environment:
@@ -53,7 +53,7 @@ pip install -r requirements.txt
 
 Run the main script:
 ```bash
-python nifty_trading_bot.py
+python predict_tommorows_price.py
 ```
 
 The script will:
