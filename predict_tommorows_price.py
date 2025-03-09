@@ -12,7 +12,7 @@ warnings.filterwarnings('ignore')
 class NiftyTradingBot:
     def __init__(self, tickers=None):
         """
-        Initialize the Nifty Trading Bot with top 50 Nifty stocks
+        Initialize the Nifty Trading Bot with top 50 Nifty stocks tada
         """
         if tickers is None:
             # Nifty 50 top stocks (NSE tickers)
@@ -36,12 +36,12 @@ class NiftyTradingBot:
         self.data = {}
         self.predictions = {}
     
-    def fetch_historical_data(self, start_date='2020-01-01', end_date='2025-03-06'):
+    def fetch_historical_data(self, start_date='2020-08-01', end_date=None):
         """
         Fetch historical stock data for all Nifty tickers
         """
         time.sleep(2)  # Wait 2 seconds before fetching the next stock
-
+        end_date = end_date or pd.Timestamp.now().strftime('%Y-%m-%d')
         for ticker in self.tickers:
             try:
                 # Use .NS suffix for NSE stocks
